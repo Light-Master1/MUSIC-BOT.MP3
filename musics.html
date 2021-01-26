@@ -1,0 +1,226 @@
+<html>
+<head>
+    <title>Music-Bot.mp4</title>
+    <link rel="stylesheet" href="" type="text/css">
+       
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- APlayer CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+
+    <title>Music-Bot.mp4</title>
+    <style>
+
+body{
+    background-color: #FC766AFF;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+}
+.menu{
+    border: 1px solid none;
+    height: 80px;
+    margin-top: -10px;
+    background: #00203FFF;
+}
+
+
+
+
+    	img{
+    		width: 100%;
+    		min-height: 250px;
+    	}
+    	.main{
+    		padding: 40px 0;
+    	}
+    	.col-md-3{
+    		margin-bottom: 40px;
+    	}
+    	.album-poster{
+    		position: relative;
+    		display: block;
+    		border-radius: 7px;
+    		overflow: hidden;
+    		box-shadow: 0 15px 35px #3d2173a1;
+    		transition: all ease 0.4s;
+    	}
+    	.album-poster:hover{
+    		box-shadow: none;
+    		transform: scale(0.98) translateY(5px);
+    	}	
+
+		#aplayer{
+			position: fixed;
+			bottom: -100%;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			box-shadow: 0 -2px 2px #dadada;
+			background-color: #fff;
+			transition: all ease 0.5s;
+		}
+		#aplayer.showPlayer{
+			bottom: 0;
+		}
+
+	
+		span{
+			color: #000 !important;
+			font-size: 16px;
+		}
+		.hello{
+		color:#FC766AFF
+		}
+		
+	
+	.button1{
+	
+background-color:#00203FFF;
+size:100px;
+color:#FC766AFF;
+ font-family: Allerta Stencil;
+ font-size: 22px;
+border-radius:30px 30px 30px 30px;
+Padding:20px 10px 20px 10px;
+
+}
+.hello{
+text-decoration:none;
+    font-family: Montserrat,sans-serif;
+}
+yp{
+position:relative;
+}
+    </style>
+    </head>
+  
+ <div class="menu">
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 align ="center" class = "hello">All Songs</h3>
+			</div>
+			
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="0">
+					<img src="https://th.bing.com/th/id/OIP.aaD0AuV9xvVEW9fhLJkq_QHaHa?w=216&h=216&c=7&o=5&pid=1.7" alt="">
+				</a><br>
+				<h4>COOL SONGS</h4>
+				<p>HAVE FUN !!!</p>
+			</div>
+
+			<div class="col-md-3">
+				<a href="Woh Din.html" class="album-poster" data-switch="0">
+					<img src="https://www.pagalworld.mobi/GpE34Kg9Gq/113422/143079-woh-din-arijit-singh-version-mp3-song-200-200.jpg" alt="">
+				</a><br>
+				<h4>Woh Din- 8D</h4>
+				<p>Arijit Singh- 2019(Use Headphones)</p>
+			</div>
+
+			<div class="col-md-3">
+				<a href="Top of the World.html" class="album-poster" data-switch="1">
+					<img src="https://th.bing.com/th/id/OIP.fSF1BhNgyJmM2RRCKZ9g6AHaHa?w=180&h=180&c=7&o=5&pid=1.7" alt="">
+				</a><br>
+				<h4>ROCKSTAR</h4>
+				<p>Lil shock</p>
+			</div>
+
+			<div class="col-md-3">
+				<a href="Never Say Never.html" class="album-poster" data-switch="3">
+					<img src="https://upload.wikimedia.org/wikipedia/en/e/ea/Never_Say_Never_Single.jpg" alt="">
+				</a><br>
+				<h4>NEVER SAY NEVER</h4>
+				<p>Justin Bieber- 2010(Use Headphones)</p>
+
+                        </div>
+
+			<div class="col-md-3">
+				<a href="No Limits.html" class="album-poster" data-switch="2">
+					<img src="https://th.bing.com/th/id/OIP.JPB0VWPovUyrc1qZF1rhmQHaEK?w=278&h=180&c=7&o=5&pid=1.7" alt="">
+				</a><br>
+				<h4>ILY</h4>
+				<p>Emilee</p>
+			</div>
+
+			<div class="col-md-3">
+				<a href="Rule the World.html" class="album-poster" data-switch="4">
+					<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JYYF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAB4ANgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDPxS4paWrMxMUYpcUYpgJinqOKQDJqTFaU49QGhcmrB+SOkiTuaZM+5sDpWkmkitkQnk5oxS4pcVgSNxS4pcUuKBDcUuKdilxTSAbiinYoxQ2A3FLinYoxSAbijFPxRigBuKMU7FLigBmKMU/FGKAGYoxT8UYoEMxRT8UUDK2KXFKBTgtCi2MZilC5qQJTgtaKn3Aaq4qREyaVVzT2IRfetdEikhkr7RtWoMUpOTk0VzylcTdxMUuKXNJmpEGKWp4LQzWz3DzJEinaNw6mn2+nTSvJ5hESIPvkZB+nt70cyCxWpcUgNPp3ENxS4paM0AGKMUuaCwoAMUYoBzThQAmKMU8CjFADMUYqTbRigRHijFSbaNtAEeKKkxRQBWVaeBSgU8LXUkkaJDAKcFp4WlwBQ2OwgG0VDIdxqR2zxUeKwnLoJvoOs7Y3dyIt21QNzHvj2pZY7QvKkDujJ90ucq/t7U6xn+y3auRlW+VvYE9aivLc291JH2zlfoaxEWbO0tJbE3M7yqFJDYPH6CmSf2XtYItxnHBz/ialteNBuP8AfP8ASs/bxQMvLZCXRVmRnDAFym7Kkjrx9KgsWknkjs2lcQuT8oPsTWtpDD+zUBxwzDn6msy2iNtrkcR6K5A+m04pDI5rd4777LGd7lgFOMdRmrU9lEki20UjG427vm6N7e3rVq3i367dSEZ2KoH1I/8ArVlSzMbtrgHJD7h+B/wp3FYlsohJqCwzr03ZU+oqaX7PJqBtfs6xZbaHjODnHp0q1NHt123kH8cbZ/Af/XFMhtsalcXs/wAkcbHZnucYJpXHYhtbNf7QltpxvCpkEcdxzUVvMkE5heCOVTJtBYDI5xVjTpvtGryzYIDIcA+mRVR1xqH0n/8AZqBFnVgkUyRxxIny5yoxmiztBPZvIwO7koR7f/XFJrhxcqfSP+prQtyIPs1sOCYySPpj/Gi4W1MiPkVLtpqptldf7rEfrUwWruTYj20bak20u2i4Ee2k21LtpNtFwI9tFSbaKBFZVp/Ao6CmE5reU7Guw4tTCSaMUoFYuo2TqNxS4p+KXFRcViF1qxMv2jS0lHLwHY30/wA4qNxxU+lfvHuLdvuvHn+n9aQ0O04xDSJWnXfGJDlcdelVbiSGXAgt1hUenU1NbZXQps/89CP1FVh0oGXIiy6BIUyGViQfcMDTpgJrzT75OkhCt7HBx/UUQjOhzj0LfzFP0jE1n5T5zDJuH8x/WkBNbj/iY3x6HCc/8BrDIzHj14rbgfGsXSH+JEP5f/rrKhhZ7pIeh34PsB1/lTBmrP8ALqtkP9iQfoP8Kiu83ltOvR7eQ8KeCP8A9X6inXD7tbtVH8AOfxB/+tTYZBFrM6EYWXA/HH/66QyDRv8Aj8P/AFzP8xUM4xeP/wBdf/ZqtWERg1WSM9FU4+mRiq0x3XDMMcyZ4+tMRPrC+ZfQp/eAX82qeR/+J9GMjAjI/rS3ce/V7X6E/lk0kt1AL1fLhUvvCtKR07cUhkEy4vJR/tE1IBxTrtMXjH+8Af8AP5UqrxVIloZil21Jto20BYj20bak20u2gViLbRUm2iqCxnmkxS96UVnKd2aWDFLigUtTcLCYozSOcd8e5pxhy+xC5ImEZ+XoMdaLhYYxGRkZHcetXFurWJ5LhNxldQoTHTAqmsLSQJIrcuCQv/AgB/PNH2dxDI7H5kBO3HoxB/lTET2r2xsRBcs3DlyBnnn2pGngX5YLSML6uMmojFi68jd/Ht3Yp/2XAG9ypMhTgdhnn/x2i47DoZwlrLAyZD5wQenFNs5TaylsZVhgimxIssavGzbTKsZyBxnHPH1oSPeyAMeSu7joD0NFwJJZib83MWR0xke2KsRz20bvcCJvOfqO34GqyeWyM6s2AQBkClxkgDqTgUrhYSNyLxbiTk7snFFw3m3LSpkcgj8Kf5O+bYjcfMMkdx/9cikSAsqsWwpi8zOO/pTAlNyDMs6piTYUYdvrVfy+h9804qEjDAk5xgfVQf61NIvlNtJzwDmgB32hWvRMysAqFQOv41WWP8/WpXQjAB+b5c+26kdPLjkYsfkYjpwcYx+JzVASySec4YjBAxT1qFtqtIqsx8sck49QP609evLYAC/madwJQKXbQnXB6ipQKdx2I9tG2pcUmKVwsRFaKkIoqXIOUyRinfLVYSUolrC5rylnApdo9ariYU4SijVj5R7qD16d6kDohjxJ0dCxHcDcOfw21AZVNN3qafNYThcnilSNVRTtKLgNn7x2Y/DkCnGZS5b1jTI9TuJYfqarblpQ6+oo52L2ZO2034kB+TzAc+1OjlZ3zIygrtC9um7/ABFQBxRuFLnK9kS2ziJh5sgfMu5jz6Dn8wKdFsRo3Lgkqi4z0wckn8hUORSjFHtA9kSRjBkMkgZmU5xzn0/HNOCmOVScHawJxUa4p+RVK7H7McvlwtvyXcvng8Abgf6frSK5DRRhv3Qxk/RSKOKXFbqDJ9kIAGSMFgNjqSD1OFUf0NOlPmBSBjjBGenJoApwquUPZiNsLmVjngYUHHReaY5DJnPB3ZT1yoGPzH6VJtzSiOpaFyDJAXkmzKp3LheTwMg+lOAVmwXXBKN34wMGl8ul2AVN0LkHo2WJ9Tmpd1Qjilz70XRXKTbqN1Q596M+9O6DlJc0VCXA70VDkh8hz3me9KJPeq+40u40cpHtCyH96XzPequ+kMijvTtpoHtC3vPrRvPrVMTL6Gl80Z6GlyD9qi4GPrS7m9RVQSD1o8wetLkK9qi5uajc9VN/vR5mO9LkD2qLe56epeqXmD1pGuVQffJPoKqMEtx+2RogvUiBzWSL1f77D6ipF1HHAk/ErW6lFCdVGwoIpfmrJGoMRnzlx9KQaiR/y3/8d/8ArU/aIn2htKhNSqmKwRqj5wLg/wDfNSC/nPS4z36iolNsftDc6UhasT7dcf8APY/pTWupmHzSsR9ayd2CmjaLgVG06jvWR9olPBkb86aZypwZAD7mp5WWpw6msbn0FJ9ob0rHe82/dO8/pSpeFuG3D6c0uWRaqU+xcvtUa02fu9+/PfGMVUOvuf8Alh/4/wD/AFqq6k6uIsPuPOfbpVjSdIXUrKZlfZMjAKT0PHQ1SiramM6jUtBDrbHrAf8Avv8A+tRWbcQSW07wygB0OCAc0UckSfbT7ljqOufxpfxoorUwAikxRRTEGKXFFFIAFLRRQMQyIOrfgKjM/oo/GiigY1pGYYJ49qZRRSAKWiigAooooAKAcHI4NFFAyY3LY4VQfXFNM8h/ix9BRRQALKQMEnHsaXcvvRRQAbl96USAdjRRSKRFcMG2496mttRuLS1kggbZ5hyzDr+FFFAnuVOtFFFAj//Z" alt="">
+				</a><br>
+				<h4>SENORITA</h4>
+				<p>Camila Cabello</p>
+			</div>
+			<div class="col-md-3">
+				<a href="Alone.html" class="album-poster" data-switch="5">
+					<img src="https://www.bing.com/th?id=OVT.VF_LCF0rCaeNnfYDA_1609937358&w=216&h=120&c=4&rs=1&vt=4&pid=6.1&qlt=80" alt="">
+				</a><br>
+				<h4>Cake</h4>
+				<p>Lil Shock</p>
+			</div>
+			<div class="col-md-3">
+				<a href="Darkside.html" class="album-poster" data-switch="6">
+					<img src="https://www.bing.com/th?id=AMMS_771a58f13c5f80e670a639d067d3ac04&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&cdv=1&pid=16.1" alt="">
+				</a><br>
+				<h4>IN MY HEAD</h4>
+				<p>Yung Denari</p>
+			
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Coming Soon</h3>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://www.mordeo.org/files/uploads/2020/02/Alan-Walker-In-Live-Concert-4K-Ultra-HD-Mobile-Wallpaper.jpg" height=270>
+				</a>
+				<h4>Alan Walker</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://www4.pictures.zimbio.com/gi/Justin+Bieber+Concert+2016+Purpose+World+Tour+tRs3sHZqcZcx.jpg">
+				</a><br>
+				<h4>Justin Bieber</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://yt3.ggpht.com/a/AGF-l7_gxip9zLOPvD4fXRkcxxaXSZvKa8wpwZK1lA=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+				</a><br>
+				<h4>Zayde Wolf</h4>
+			</div>
+			
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://th.bing.com/th/id/OIP.x2biHetRL4c1D9O0Awee2gHaFJ?w=236&h=180&c=7&o=5&pid=1.7" alt="">
+				</a>
+				<h4>One direction</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://th.bing.com/th/id/OIP.80aCT2wzRvqBICzaE5Z-zQHaLH?w=120&h=180&c=7&o=5&pid=1.7" alt="">
+				</a>
+				<h4>Marshmello</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/7/7d/20190926133956!T-series-logo.svg/77px-T-series-logo.svg.png" height=270>
+				</a>
+				<h4>T-Series</h4>
+			</div>
+		</div>
+
+	<div class="yp">
+	<center><button class="button1" align="center"><a href ="music.html" class = "hello">Click to go home</button></center>
+<br></div>
+
+	
+
+
+    </body>
+</html>
